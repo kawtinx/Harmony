@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Harmony</div>
+        <div class="nav-links">
+            <a href="#" data-section="profile">Home</a>
+            <a href="#sites" data-section="sites">Sites</a>
+            <a href="#projects" data-section="projects">Projects</a>
+            <a href="#live" data-section="live">Live</a>
+            <a href="#pricing" data-section="pricing">Dshomo</a>
+        </div>
+        <button class="download-btn">Download</button>
+    </nav>
+
+    <section class="sites-section" id="sites">
+        <div class="container">
+            <h1>Our Featured Sites</h1>
+            <div class="sites-grid">
+                <div class="site-card">
+                    <img src="https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Login Page" class="site-image">
+                    <h3 class="site-title">Modern Login Page</h3>
+                    <p class="site-description">A sleek and modern login page with smooth animations and responsive design.</p>
+                    <div class="site-tags">
+                        <span class="site-tag">HTML</span>
+                        <span class="site-tag">CSS</span>
+                        <span class="site-tag">JavaScript</span>
+                    </div>
+                    <a href="https://theultimatenextprofileexperience.on.drv.tw/sites/landing%20page%20site/log%20page/" class="site-link" target="_blank">View Site →</a>
+                </div>
+
+                <div class="site-card">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Web Saban" class="site-image">
+                    <h3 class="site-title">Web Saban</h3>
+                    <p class="site-description">A creative portfolio website with modern design elements and interactive features.</p>
+                    <div class="site-tags">
+                        <span class="site-tag">Portfolio</span>
+                        <span class="site-tag">Responsive</span>
+                        <span class="site-tag">Modern</span>
+                    </div>
+                    <a href="https://theultimatenextprofileexperience.on.drv.tw/web%20saban/" class="site-link" target="_blank">View Site →</a>
+                </div>
+
+                <div class="site-card">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hesay Ferdrog" class="site-image">
+                    <h3 class="site-title">Hesay Ferdrog</h3>
+                    <p class="site-description">An engaging gaming-themed website with unique design and interactive elements.</p>
+                    <div class="site-tags">
+                        <span class="site-tag">HTML</span>
+                        <span class="site-tag">Interactive</span>
+                        <span class="site-tag">Dynamic</span>
+                    </div>
+                    <a href="https://kawtinx.github.io/hesayferdrog/" class="site-link" target="_blank">View Site →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Projects will be loaded here dynamically -->
+                <div class="loading-projects">
+                    Loading projects...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live" class="section live-section">
+        <div class="chat-interface">
+            <div class="chat-header">
+                <h1>What can I help with?</h1>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will be added here -->
+            </div>
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <textarea id="chat-input" placeholder="Message ChatGPT" rows="1"></textarea>
+                    <button id="send-message" class="send-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <button class="voice-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="currentColor"/>
+                            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="chat-footer">
+                    <p>ChatGPT can make mistakes. Check important info.</p>
+                    <button class="help-button">?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <h2>Programming Updates & Tips</h2>
+            <p>Get the latest updates and tips on programming</p>
+        </div>
+        
+        <div class="dshomo-container">
+            <!-- Featured Article -->
+            <div class="featured-article">
+                <h3>Featured Article</h3>
+                <div class="featured-article-content">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3" alt="Programming" class="featured-image">
+                    <div class="article-meta">
+                        <span class="author">By John Smith</span>
+                        <span class="date">December 3, 2024</span>
+                    </div>
+                    <h4 class="article-title">Becoming a Professional Programmer in 2024</h4>
+                    <p class="article-text">
+                        Discover the essential skills, tools, and practices needed to become a successful programmer in today's rapidly evolving tech landscape. Learn about the most in-demand programming languages, frameworks, and development methodologies.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Programming</span>
+                        <span class="tag">Career Growth</span>
+                        <span class="tag">Technology</span>
+                    </div>
+                </div>
+                <div class="related-articles">
+                    <!-- Related articles will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <!-- Programming Tips -->
+            <div class="programming-tips">
+                <h3>Programming Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-header">
+                            <img src="profile-pic.jpg" alt="Author" class="tip-author-img">
+                            <div class="tip-meta">
+                                <span class="tip-author">Sarah Johnson</span>
+                                <span class="tip-date">2 hours ago</span>
+                            </div>
+                        </div>
+                        <pre><code class="language-javascript">
+// Clean Code Tip:
+function calculateTotal(items) {
+    return items.reduce((sum, item) => 
+        sum + item.price, 0);
+}
+                        </code></pre>
+                        <p class="tip-content">Always aim for clean, readable code. Use meaningful variable names and keep functions focused on a single responsibility.</p>
+                        <div class="tip-stats">
+                            <span>❤️ 245</span>
+                            <span>🔄 123</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Resources -->
+            <div class="learning-resources">
+                <h3>Learning Resources</h3>
+                <div class="resources-grid">
+                    <a href="#" class="resource-card">
+                        <h4>Online Courses</h4>
+                        <p>Access premium programming courses from top instructors</p>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <h4>Practice Projects</h4>
+                        <p>Build real-world projects to enhance your portfolio</p>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <h4>Coding Challenges</h4>
+                        <p>Solve daily programming challenges to improve skills</p>
+                    </a>
+                    <a href="#" class="resource-card">
+                        <h4>Community</h4>
+                        <p>Connect with fellow developers and share knowledge</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="profile-container">
+        <div class="profile-left-column">
+            <div class="profile-header">
+                <img src="https://storage.googleapis.com/codeium-users/gKpBe5IeC3SHQmBGLePYTK1FcSf2/profile.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=codeium-api-sa%40exafunction.iam.gserviceaccount.com%2F20241203%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241203T215053Z&X-Goog-Expires=28799&X-Goog-Signature=42f2539e4ee39e491625d25947320303fe46837fb48bfe0f732dcc784437acc7b00aee2f1e1bd2eb203da1cd6f9cf6c23e00fe09e15f46f326d635f9753b07c0b766a9dec6ecb0fb8d7902bc57a4135453fd8c26eeaeb20761a9466ddaadbb5e0ba557f7f61c7f82454d99176b608f73a6d86ca63a14204a483e37ba57fbc37d89f338348c242d7ceb821f1d72b5df049f880708a0668f2927efcf16f0bca3be21885b0ce7b7a043038d3c686ee9a83a918f2e938ba58ea16b50243e35a2fcb71931749b3fe2dcc06d13559311d3c0ad35e6b73312a72e4380212e607ad8a924eb4ba811595b04a850e4e80eecbfe549a02cb0ef6a67a83e21e34fc0119fe37a&X-Goog-SignedHeaders=host" alt="Profile Picture" class="profile-pic">
+                <h1 class="username">kawtinx</h1>
+                <p class="title">harmony ✍️</p>
+                <p class="member-since">Member since Dec 14, 2019</p>
+                <p class="email">ahmedtiznit61@gmail.com</p>
+                <span class="pro-badge">PRO</span>
+                <span class="elite-badge">ELITE</span>
+                <span class="king-badge">KING</span>
+                <span class="vip-badge">VIP</span>
+            </div>
+
+            <div class="bio-section">
+                <h3>Bio</h3>
+                <p>My expertise lies in combining creativity with technical skills, bringing ideas to life through responsive design and intuitive interfaces.⚡</p>
+            </div>
+
+            <div class="achievements-section">
+                <h3>Achievements</h3>
+                <div class="achievement-badges">
+                    <div class="achievement-badge">
+                        <div class="badge-icon">
+                            <img src="https://exafunction.github.io/public/badges/autocomplete_tier_1.png" alt="Autocomplete Wizard Badge">
+                        </div>
+                        <div class="badge-info">
+                            <h4>Autocomplete Wizard</h4>
+                            <p class="badge-level">Level 9 / 10</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                            <p class="badge-progress">25 / 30 autocomplete suggestions completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-updates">
+                <h3>Social Updates</h3>
+                <div class="social-links">
+                    <a href="https://x.com/flaprd64986" class="twitter-link">
+                        <svg class="twitter-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/0r_9x" class="instagram-link">
+                        <svg class="instagram-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kawtinx" class="github-link">
+                        <svg class="github-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-right-column">
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-details">
+                        <div class="stat-title">Completions (7 Days)</div>
+                        <div class="completions-7-days stat-number">0</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-details">
+                        <div class="stat-title">Total Completions</div>
+                        <div class="total-completions stat-number">0</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-details">
+                        <div class="stat-title">Streak <span class="streak-record">(0 day record)</span></div>
+                        <div class="streak-count stat-number">0 Days 🔥</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="completions-text">67 accepted completions</p>
+
+            <div class="activity-section">
+                <div class="chart-wrapper">
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </div>
+
+            <div class="languages-section">
+                <h2>Top coding languages</h2>
+                <div class="chart-wrapper">
+                    <canvas id="languagesChart"></canvas>
+                </div>
+                <div class="language-icons">
+                    <div class="language-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="language-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        <span>HTML</span>
+                    </div>
+                    <div class="language-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <div class="download-card">
+                <div class="product-header">
+                    <div class="product-title">
+                        <h2>VS Code <span class="new-badge">new</span></h2>
+                    </div>
+                    
+                    <div class="logo-section">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-visual-studio-code-logo-icon-download-in-svg-png-gif-file-formats--html-coding-programming-development-microsoft-logos-pack-icons-1583105.png?f=webp&w=256" alt="VS Code Logo" class="VSCode-logo">
+                    </div>
+
+                    <h1 class="editor-title">VS Code Editor</h1>
+                    <p class="description">IDE built to keep you in flow state. Instant, invaluable AI developer assistance where you want it, when you want it.</p>
+                    
+                    <div class="action-buttons">
+                        <a href="https://code.visualstudio.com/download" class="download-button">
+                            <img class="download-icon" src="https://code.visualstudio.com/assets/icons/download.svg" width="18px" height="18px" alt="Download VS Code">
+                            Download VS Code
+                        </a>
+                        <a href="https://code.visualstudio.com/" class="explore-button">Explore</a>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-name">Debugging</div>
+                        <div class="feature-desc">Support for debugging with breakpoints, call stacks, and interactive console</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-name">Syntax Highlighting</div>
+                        <div class="feature-desc">Intelligent syntax highlighting for multiple programming languages</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-name">Code Completion</div>
+                        <div class="feature-desc">Smart code completion with IntelliSense</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-name">Snippets</div>
+                        <div class="feature-desc">Built-in code snippets and custom snippet support</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-name">Git Integration</div>
+                        <div class="feature-desc">Embedded version control with Git support</div>
+                    </div>
+                </div>
+                    <a href="#" class="learn-more">Learn more about Windsurf →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-jsx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-bash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
